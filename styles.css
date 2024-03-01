@@ -1,30 +1,79 @@
-body {
-margin: 0;
-background-image: url('images/IMG_9653.png');
-/* background-repeat: repeat-x; */
-background-attachment: fixed;
-background-size: 100% 100%;
+@font-face {
+    font-family: Abordage;
+    src:url("fonts/Abordage-Regular.ttf");
 }
+
+@font-face {
+    font-family: Sligoil;
+    src:url("fonts/Sligoil-Micro.otf");
+}
+
+
+@font-face {
+    font-family: Terminal;
+    src:url("fonts/terminal-grotesque.ttf");
+}
+
+@font-face {
+    font-family: Louise;
+    src:url("fonts/Louise-Regular.ttf");
+}
+
+
+body {
+    margin: 0;
+    background-image: url('images/IMG_9653.png');
+    /* background-repeat: repeat-x; */
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
 h1 {font-family: Abordage; 
     text-align: center; 
-    font-size: 200px}
-p {font-family: Sligoil; 
+    line-height: 240px;
+    font-size: 100px}
+
+p {font-family: Terminal; 
     font-size: 24px; 
     margin: 0px 100px; 
     line-height: 130%;
-    background-color: white}
-
-
-.sticky {
-    font-family: Sligoil; 
-    font-size: 36px; 
-    position: -webkit-sticky;
-    position: sticky;
-    width: 10vw;
-    display: inline-block;
+    padding: 10px;
+    background-color: white;
+    box-sizing: border-box;
+    width:60vw;
 }
 
-.sticky 12345rtytrewqa{
+button{
+    background-color:black; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-family: Terminal;
+    font-size: 24px;
+}
+
+.sticky {
+    font-family: Abordage; 
+    font-size: 24px; 
+    position: -webkit-sticky;
+    position: sticky;
+    width: 20vw;
+    display: inline-block;
+    color: black;
+}
+
+.sticky a{
+    color: black;
+
+}
+
+.sticky a:hover{
+    color: orangered;
+}
+
+
+a{
     text-decoration: none;
 }
 
@@ -44,8 +93,8 @@ p {font-family: Sligoil;
     left: 5%; 
     position: relative; 
     margin: 0px 200px; 
+    padding: 0px;
     z-index: -1;
-    display: inline-block;
 }
 
 .topnav {
@@ -80,12 +129,12 @@ p {font-family: Sligoil;
 
 .navstar {
     color: black;
-    font-size: 200px;
+    font-size: 120px;
     position: fixed;
     text-decoration: none;
 }
 .navstar:hover{
-    color: red
+    color: orangered
 }
 
 .navstar.active{
@@ -123,13 +172,3 @@ p {font-family: Sligoil;
     margin: 40px;
 }
 
-
-@font-face {
-    font-family: Abordage;
-    src:local("fonts/Abordage-Regular.ttf");
-}
-
-@font-face {
-    font-family: Sligoil;
-    src:local("fonts/Sligoil-Micro.otf");
-}

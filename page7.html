@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Make it Thick</title>
+  <meta name="description" content="curated by Anthony Huberman">
+  <link rel="stylesheet" href="styles.css">
+  <!--LINK JQUERY-->
+  <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+  <div id="starcontainer" style="z-index: 2;">
+    <a class="navstar" style="top: 20%; left: 20%" href="index.html">*</a>
+    <a class="navstar" style="top: 30%; left: 80%" href="page1.html">*</a>
+    <a class="navstar" style="top: 50%; left: 50%" href="page2.html">*</a>
+    <a class="navstar" style="top: 65%; left: 3%" href="page3.html">*</a>
+    <a class="navstar" style="top: 80%; left: 90%" href="page4.html">*</a>
+    <a class="navstar" style="top: 5%; left: 12%" href="page5.html">*</a>
+    <a class="navstar" style="top: 75%; left: 72%" href="page6.html">*</a>
+    <a class="navstar active" style="top: 5%; left: 42%" href="page7.html">*</a>
+    <a class="navstar" style="top: 25%; left: 32%" href="page8.html">*</a>
+    <a class="navstar" style="top: 10%; left: 85%" href="page9.html">*</a>
+  </div>
+
+  <table style="width: 100vw; height: 100vh;">
+    <tr>
+      <td><button onclick="audios[0].play();">A</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="audios[1].play();">B</button></td>
+      <td><button onclick="audios[2].play();">C</button></td>
+      <td><button onclick="audios[3].play();">D</button></td>
+      <td><button onclick="audios[4].play();">E</button></td>
+      <td><button onclick="audios[5].play();">F</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="audios[6].play();">G</button></td>
+      <td><button onclick="audios[7].play();">H</button></td>
+      <td><button onclick="audios[8].play();">I</button></td>
+      <td><button onclick="audios[9].play();">J</button></td>
+      <td><button onclick="audios[10].play();">K</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="audios[11].play();">L</button></td>
+      <td><button onclick="audios[12].play();">M</button></td>
+      <td><button onclick="audios[13].play();">N</button></td>
+      <td><button onclick="audios[14].play();">O</button></td>
+      <td><button onclick="audios[15].play();">P</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="audios[16].play();">Q</button></td>
+      <td><button onclick="audios[17].play();">R</button></td>
+      <td><button onclick="audios[18].play();">S</button></td>
+      <td><button onclick="audios[19].play();">T</button></td>
+      <td><button onclick="audios[20].play();">U</button></td>
+    </tr>
+    <tr>
+      <td><button onclick="audios[21].play();">V</button></td>
+      <td><button onclick="audios[22].play();">W</button></td>
+      <td><button onclick="audios[23].play();">X</button></td>
+      <td><button onclick="audios[24].play();">Y</button></td>
+      <td><button onclick="audios[25].play();">Z</button></td>
+    </tr>
+  </table>
+  <!--PERSONAL SCRIPT JavaScript-->
+  <script src="js/nav.js"></script>
+  <script src="js/header.js"></script>
+  <script>
+    const srcArr = ["mp3/audio-alphabet/A.wav",
+      "mp3/audio-alphabet/B.wav",
+      "mp3/audio-alphabet/C.wav",
+      "mp3/audio-alphabet/D.wav",
+      "mp3/audio-alphabet/E.wav",
+      "mp3/audio-alphabet/F.wav",
+      "mp3/audio-alphabet/G.wav",
+      "mp3/audio-alphabet/H.wav",
+      "mp3/audio-alphabet/I.wav",
+      "mp3/audio-alphabet/J.wav",
+      "mp3/audio-alphabet/K.wav",
+      "mp3/audio-alphabet/L.wav",
+      "mp3/audio-alphabet/M.wav",
+      "mp3/audio-alphabet/N.wav",
+      "mp3/audio-alphabet/O.wav",
+      "mp3/audio-alphabet/P.wav",
+      "mp3/audio-alphabet/Q.wav",
+      "mp3/audio-alphabet/R.wav",
+      "mp3/audio-alphabet/S.wav",
+      "mp3/audio-alphabet/T.wav",
+      "mp3/audio-alphabet/U.wav",
+      "mp3/audio-alphabet/V.wav",
+      "mp3/audio-alphabet/W.wav",
+      "mp3/audio-alphabet/X.wav",
+      "mp3/audio-alphabet/Y.wav",
+      "mp3/audio-alphabet/Z.wav"];
+    const audios = new Array(srcArr.length);
+    for (var i = 0; i < srcArr.length; i++) {
+      audios[i] = new Audio();
+    }
+    audios.forEach((audio, index) => audio.src = srcArr[index]);
+    console.log(audios)
+  </script>
+
+</body>
+
+</html>
