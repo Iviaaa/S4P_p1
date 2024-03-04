@@ -9,8 +9,8 @@
   <script type="text/javascript" src="jquery-3.7.1.min.js"></script>
 </head>
 
-<body>
-  <div id="starcontainer" style="z-index: 2;">
+<body style="width: 100vw; height: 100vh"ondragover="drag_over(event)" ondrop="drop(event)">
+  <div id="starcontainer" style="z-index: 2">
     <a class="navstar" style="top: 20%; left: 20%" href="index.html">*</a>
     <a class="navstar" style="top: 30%; left: 80%" href="page1.html">*</a>
     <a class="navstar" style="top: 50%; left: 50%" href="page2.html">*</a>
@@ -23,49 +23,36 @@
     <a class="navstar" style="top: 10%; left: 85%" href="page9.html">*</a>
   </div>
 
-  <table style="width: 100vw; height: 100vh;">
-    <tr>
-      <td><button onclick="audios[0].play();">A</button></td>
-    </tr>
-    <tr>
-      <td><button onclick="audios[1].play();">B</button></td>
-      <td><button onclick="audios[2].play();">C</button></td>
-      <td><button onclick="audios[3].play();">D</button></td>
-      <td><button onclick="audios[4].play();">E</button></td>
-      <td><button onclick="audios[5].play();">F</button></td>
-    </tr>
-    <tr>
-      <td><button onclick="audios[6].play();">G</button></td>
-      <td><button onclick="audios[7].play();">H</button></td>
-      <td><button onclick="audios[8].play();">I</button></td>
-      <td><button onclick="audios[9].play();">J</button></td>
-      <td><button onclick="audios[10].play();">K</button></td>
-    </tr>
-    <tr>
-      <td><button onclick="audios[11].play();">L</button></td>
-      <td><button onclick="audios[12].play();">M</button></td>
-      <td><button onclick="audios[13].play();">N</button></td>
-      <td><button onclick="audios[14].play();">O</button></td>
-      <td><button onclick="audios[15].play();">P</button></td>
-    </tr>
-    <tr>
-      <td><button onclick="audios[16].play();">Q</button></td>
-      <td><button onclick="audios[17].play();">R</button></td>
-      <td><button onclick="audios[18].play();">S</button></td>
-      <td><button onclick="audios[19].play();">T</button></td>
-      <td><button onclick="audios[20].play();">U</button></td>
-    </tr>
-    <tr>
-      <td><button onclick="audios[21].play();">V</button></td>
-      <td><button onclick="audios[22].play();">W</button></td>
-      <td><button onclick="audios[23].play();">X</button></td>
-      <td><button onclick="audios[24].play();">Y</button></td>
-      <td><button onclick="audios[25].play();">Z</button></td>
-    </tr>
-  </table>
+  <button draggable="true" class="dragme" id="dragme1" onclick="audios[0].play();" ondragstart="drag_start(event)">A</button>
+  <button draggable="true" class="dragme" id="dragme2" onclick="audios[1].play();" ondragstart="drag_start(event)">B</button>
+  <button draggable="true" class="dragme" id="dragme3" onclick="audios[2].play();" ondragstart="drag_start(event)">C</button>
+  <button draggable="true" class="dragme" id="dragme4" onclick="audios[3].play();" ondragstart="drag_start(event)">D</button>
+  <button draggable="true" class="dragme" id="dragme5" onclick="audios[4].play();" ondragstart="drag_start(event)">E</button>
+  <button draggable="true" class="dragme" id="dragme6" onclick="audios[5].play();" ondragstart="drag_start(event)">F</button>
+  <button draggable="true" class="dragme" id="dragme7" onclick="audios[6].play();" ondragstart="drag_start(event)">G</button>
+  <button draggable="true" class="dragme" id="dragme8" onclick="audios[7].play();" ondragstart="drag_start(event)">H</button>
+  <button draggable="true" class="dragme" id="dragme9" onclick="audios[8].play();" ondragstart="drag_start(event)">I</button>
+  <button draggable="true" class="dragme" id="dragme10" onclick="audios[9].play();" ondragstart="drag_start(event)">J</button>
+  <button draggable="true" class="dragme" id="dragme11" onclick="audios[10].play();" ondragstart="drag_start(event)">K</button>
+  <button draggable="true" class="dragme" id="dragme12" onclick="audios[11].play();" ondragstart="drag_start(event)">L</button>
+  <button draggable="true" class="dragme" id="dragme13" onclick="audios[12].play();" ondragstart="drag_start(event)">M</button>
+  <button draggable="true" class="dragme" id="dragme14" onclick="audios[13].play();" ondragstart="drag_start(event)">N</button>
+  <button draggable="true" class="dragme" id="dragme15" onclick="audios[14].play();" ondragstart="drag_start(event)">O</button>
+  <button draggable="true" class="dragme" id="dragme16" onclick="audios[15].play();" ondragstart="drag_start(event)">P</button>
+  <button draggable="true" class="dragme" id="dragme17" onclick="audios[16].play();" ondragstart="drag_start(event)">Q</button>
+  <button draggable="true" class="dragme" id="dragme18" onclick="audios[17].play();" ondragstart="drag_start(event)">R</button>
+  <button draggable="true" class="dragme" id="dragme19" onclick="audios[18].play();" ondragstart="drag_start(event)">S</button>
+  <button draggable="true" class="dragme" id="dragme20" onclick="audios[19].play();" ondragstart="drag_start(event)">T</button>
+  <button draggable="true" class="dragme" id="dragme21" onclick="audios[20].play();" ondragstart="drag_start(event)">U</button>
+  <button draggable="true" class="dragme" id="dragme22" onclick="audios[21].play();" ondragstart="drag_start(event)">V</button>
+  <button draggable="true" class="dragme" id="dragme23" onclick="audios[22].play();" ondragstart="drag_start(event)">W</button>
+  <button draggable="true" class="dragme" id="dragme24" onclick="audios[23].play();" ondragstart="drag_start(event)">X</button>
+  <button draggable="true" class="dragme" id="dragme25" onclick="audios[24].play();" ondragstart="drag_start(event)">Y</button>
+  <button draggable="true" class="dragme" id="dragme26" onclick="audios[25].play();" ondragstart="drag_start(event)">Z</button>
   <!--PERSONAL SCRIPT JavaScript-->
   <script src="js/nav.js"></script>
   <script src="js/header.js"></script>
+  <script src="js/draggable.js"></script>
   <script>
     const srcArr = ["mp3/audio-alphabet/A.wav",
       "mp3/audio-alphabet/B.wav",
@@ -95,7 +82,8 @@
       "mp3/audio-alphabet/Z.wav"];
     const audios = new Array(srcArr.length);
     for (var i = 0; i < srcArr.length; i++) {
-      audios[i] = new Audio();
+      console.log("one elem");
+      audios[i]= new Audio();
     }
     audios.forEach((audio, index) => audio.src = srcArr[index]);
     console.log(audios)

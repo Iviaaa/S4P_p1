@@ -20,31 +20,26 @@
     <a class="navstar" style="top: 75%; left: 72%" href="page6.html">*</a>
     <a class="navstar" style="top: 5%; left: 42%" href="page7.html">*</a>
     <a class="navstar" style="top: 25%; left: 32%" href="page8.html">*</a>
-    <a class="navstar active" style="top: 10%; left: 85%" href="page9.html">*</a>s
+    <a class="navstar active" style="top: 10%; left: 85%" href="page9.html">*</a>
   </div>
   <br><br>
 
-  <div id="container">
-      <video autoplay="true" id="videoElement">
-      
-      </video>
-    </div>
+  <div id="index" style="font-family: Terminal; font-size: 24px">
+    <div style="position: fixed; top: 20%; left: 18%">front cover</div>
+    <div style="position: fixed; top: 30%; left: 76%">Anthony Huberman</div>
+    <div style="position: fixed; top: 50%; left: 47%">Vanessa Chang</div>
+    <div style="position: fixed; top: 65%; left: 2%">Kaegan Sparks</div>
+    <div style="position: fixed; top: 80%; left: 83%">Kenric Allado-McDowell</div>
+    <div style="position: fixed; top: 5%; left: 6%">The Consilience Project</div>
+    <div style="position: fixed; top: 75%; left: 70%">Arnaud Pfeffer</div>
+    <div style="position: fixed; top: 5%; left: 40%">Anonymous</div>
+    <div style="position: fixed; top: 25%; left: 29%">Walter Benjamin</div>
+    <div style="position: fixed; top: 10%; left: 83%">back cover</div>
+  </div>
 
   <!--PERSONAL SCRIPT JavaScript-->
   <script src="js/nav.js"></script>
   <script src="js/header.js"></script>
-  <script>
-    var video = document.querySelector("#videoElement");
-      if (navigator.mediaDevices.getUserMedia) {
-        navigator.mediaDevices.getUserMedia({ video: true })
-          .then(function (stream) {
-            video.srcObject = stream;
-          })
-          .catch(function (err0r) {
-            console.log("Something went wrong!");
-          });
-      }
-    </script>
 
 </body>
 

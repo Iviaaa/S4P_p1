@@ -22,10 +22,8 @@
 
 body {
     margin: 0;
-    background-image: url('images/IMG_9653.png');
+    /* background-image: url('images/IMG_9653.png'); */
     /* background-repeat: repeat-x; */
-    background-attachment: fixed;
-    background-size: 100% 100%;
 }
 
 h1 {font-family: Abordage; 
@@ -77,18 +75,6 @@ a{
     text-decoration: none;
 }
 
-#machine{
-    top:0;
-}
-
-#artist{
-    top:20vh;
-}
-
-#anything{
-    top:40vh;
-}
-
 .textcontent{
     left: 5%; 
     position: relative; 
@@ -134,11 +120,11 @@ a{
     text-decoration: none;
 }
 .navstar:hover{
-    color: orangered
+    color: orangered;
 }
 
 .navstar.active{
-    color: blue
+    color: aqua;
 }
 
 .textcontainer{
@@ -172,3 +158,6 @@ a{
     margin: 40px;
 }
 
+.dragme{
+    position:absolute;
+}
