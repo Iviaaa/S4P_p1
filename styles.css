@@ -31,7 +31,7 @@ h1 {font-family: Abordage;
     line-height: 240px;
     font-size: 100px}
 
-p {font-family: Terminal; 
+p { font-family: Terminal; 
     font-size: 24px; 
     margin: 0px 100px; 
     line-height: 130%;
@@ -125,6 +125,22 @@ a{
 
 .navstar.active{
     color: aqua;
+}
+
+.navstar .hovertext{
+    visibility: hidden;
+    position: absolute;
+    font-family: Terminal; 
+    font-size: 24px;
+    top: 20%;
+    width: 8vw;
+    left: 105%;
+    color: orangered;
+    background-color: white;
+}
+
+.navstar:hover .hovertext{
+    visibility:  visible;
 }
 
 .textcontainer{
